@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GAME COUNTER가 게임을 추천하는 방향과 운영 목적을 소개하고, 취향별 추천과 자주 묻는 질문을 안내합니다.">
+    <meta name="theme-color" content="#071018">
+    <title>사이트 소개 &amp; FAQ — GAME COUNTER</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./about.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body class="about-page">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+
+    <header class="site-header scrolled" data-header data-solid-header>
+      <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="GAME COUNTER 홈"><span class="brand-mark" aria-hidden="true">G</span><span>GAME <strong>COUNTER</strong></span></a>
+        <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-button><span></span><span></span></button>
+        <nav class="main-nav" aria-label="주요 메뉴" data-nav>
+          <a href="./index.html">홈</a>
+          <a href="./index.html#genres">장르</a>
+          <a href="./tier-list.html">티어표</a>
+          <a href="./criteria-and-detail.html">선정 기준 &amp; 리뷰</a>
+          <a class="active" href="./about.html" aria-current="page">사이트 소개</a>
+        </nav>
+        <a class="header-cta" href="#quick-picks">게임 추천</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="about-hero" aria-labelledby="about-title">
+        <div class="about-hero-copy">
+          <p class="eyebrow"><span></span> ABOUT GAME COUNTER</p>
+          <h1 id="about-title">취향의 언어로<br><em>게임을 고릅니다</em></h1>
+          <p>유명한 게임을 나열하는 데서 멈추지 않습니다.<br>왜 좋은지, 어디서 호불호가 갈리는지까지 함께 전합니다.</p>
+          <a class="button button-primary" href="#direction">추천 방향 알아보기 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="about-collage" aria-hidden="true">
+          <span style="--tile-image: url('./assets/Game_Image/하데스.webp')"></span>
+          <span style="--tile-image: url('./assets/Game_Image/할로우 나이트.webp')"></span>
+          <span style="--tile-image: url('./assets/Game_Image/엘든링.webp')"></span>
+          <span style="--tile-image: url('./assets/Game_Image/발더스 게이트3.webp')"></span>
+        </div>
+      </section>
+
+      <section class="direction section shell" id="direction" aria-labelledby="direction-title">
+        <div class="about-section-heading">
+          <div><p class="section-index">OUR DIRECTION</p><h2 id="direction-title">좋은 게임보다<br>잘 맞는 게임</h2></div>
+          <p>누군가의 명작이 모두에게 같은 경험은 아닙니다. GAME COUNTER는 평가의 근거와 취향의 조건을 함께 보여 주어, 사용자가 스스로 다음 게임을 고를 수 있도록 돕습니다.</p>
+        </div>
+        <div class="principle-grid">
+          <article><span>01</span><h3>점수는 출발점</h3><p>수상 기록과 평점으로 완성도를 확인하되, 숫자만으로 작품의 가치를 단정하지 않습니다.</p></article>
+          <article><span>02</span><h3>단점까지 솔직하게</h3><p>장점과 함께 진입 장벽과 반복 구간처럼 구매 전에 알아야 할 유의점도 명확히 적습니다.</p></article>
+          <article><span>03</span><h3>취향으로 연결</h3><p>장르명보다 실제 플레이 감각을 설명하고 어떤 플레이어에게 잘 맞는지 구체적으로 안내합니다.</p></article>
+        </div>
+      </section>
+
+      <section class="purpose-section">
+        <div class="shell purpose-layout">
+          <div class="purpose-copy">
+            <p class="section-index">WHY WE EXIST</p>
+            <h2>검색은 짧게,<br>플레이는 오래</h2>
+            <p>정보가 너무 많아 게임을 고르는 데 지치지 않도록, 신뢰할 수 있는 후보를 좁히고 선택에 필요한 핵심만 남깁니다.</p>
+            <a class="text-link" href="./criteria-and-detail.html">선정 기준과 상세 리뷰 보기 <span aria-hidden="true">→</span></a>
+          </div>
+          <ol class="curation-flow">
+            <li><span>01</span><div><strong>발견</strong><p>장르를 대표하거나 새로운 가능성을 보여 준 작품을 찾습니다.</p></div></li>
+            <li><span>02</span><div><strong>검토</strong><p>평가 기록, 플레이 구조, 장점과 유의점을 함께 살핍니다.</p></div></li>
+            <li><span>03</span><div><strong>추천</strong><p>누구에게 어떤 이유로 권할 수 있는지 한눈에 정리합니다.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="quick-picks section shell" id="quick-picks" aria-labelledby="picks-title">
+        <div class="about-section-heading compact">
+          <div><p class="section-index">START WITH YOUR MOOD</p><h2 id="picks-title">지금 원하는 경험은?</h2></div>
+          <p>고민할 필요 없이 지금의 기분에 가까운 문장을 고르세요. 바로 해당 게임의 상세 리뷰로 이동합니다.</p>
+        </div>
+        <div class="pick-grid">
+          <a class="pick-card" href="./criteria-and-detail.html#hades" style="--pick-image: url('./assets/Game_Image/하데스.webp')"><span>ACTION</span><strong>빠르게 몰입하고<br>다시 도전하고 싶다</strong><small>하데스 →</small></a>
+          <a class="pick-card" href="./criteria-and-detail.html#disco-elysium" style="--pick-image: url('./assets/Game_Image/디스코 엘리시움.webp')"><span>STORY</span><strong>선택과 대화로<br>깊은 이야기를 만나고 싶다</strong><small>디스코 엘리시움 →</small></a>
+          <a class="pick-card" href="./criteria-and-detail.html#slay-the-spire" style="--pick-image: url('./assets/Game_Image/슬레이 더 스파이어.webp')"><span>STRATEGY</span><strong>천천히 생각하며<br>완벽한 수를 찾고 싶다</strong><small>슬레이 더 스파이어 →</small></a>
+          <a class="pick-card" href="./criteria-and-detail.html#elden-ring" style="--pick-image: url('./assets/Game_Image/엘든링.webp')"><span>ADVENTURE</span><strong>거대한 세계를<br>내 방식대로 탐험하고 싶다</strong><small>엘든 링 →</small></a>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="shell faq-layout">
+          <div class="faq-intro"><p class="section-index">FAQ</p><h2 id="faq-title">자주 묻는<br>질문</h2><p>추천 목록과 정보 표기에서 궁금할 만한 내용을 정리했습니다.</p></div>
+          <div class="faq-list">
+            <details open><summary><span>01</span>왜 20개 게임만 소개하나요?</summary><p>처음부터 많은 작품을 나열하기보다 각 게임의 장점과 유의점을 충분히 설명할 수 있는 20개 대표작으로 시작했습니다.</p></details>
+            <details><summary><span>02</span>S·A·B 티어는 절대적인 순위인가요?</summary><p>아닙니다. 수상과 평점을 참고한 큐레이션 기준이며, B 티어도 취향이 맞는 플레이어에게 충분히 강하게 추천할 수 있는 수작입니다.</p></details>
+            <details><summary><span>03</span>가격과 플레이 시간은 항상 같나요?</summary><p>표시 가격은 기준가로 판매처와 할인에 따라 달라질 수 있습니다. 플레이 시간도 진행 방식과 부가 콘텐츠 여부에 따라 개인차가 큽니다.</p></details>
+            <details><summary><span>04</span>메타크리틱 점수는 어떤 플랫폼 기준인가요?</summary><p>플랫폼별 점수가 다를 수 있어 대표값을 사용합니다. 점수는 작품을 이해하기 위한 참고 자료이며 단독 선정 기준은 아닙니다.</p></details>
+            <details><summary><span>05</span>공식 영상만 사용하는 이유는 무엇인가요?</summary><p>정확한 출처와 안정적인 품질을 위해 개발사·배급사 공식 채널의 영상만 연결합니다. 확인되지 않은 재업로드 영상은 사용하지 않습니다.</p></details>
+            <details><summary><span>06</span>내 취향에 맞는 게임은 어디서 찾나요?</summary><p>위의 빠른 추천에서 원하는 경험을 선택하거나 장르별 티어표에서 장르를 좁힌 뒤, 상세 리뷰의 ‘이런 플레이어에게’ 항목을 확인해 보세요.</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div><a class="brand" href="./index.html" aria-label="GAME COUNTER 홈"><span class="brand-mark" aria-hidden="true">G</span><span>GAME <strong>COUNTER</strong></span></a><p>취향을 선명하게, 다음 게임을 가깝게.</p><address class="footer-contact"><span>대표: 김이언</span><span>대표 전화번호: <a href="tel:010-1234-4321">010-1234-4321</a></span></address></div>
+        <nav aria-label="하단 메뉴"><a href="./criteria-and-detail.html">선정 기준</a><a href="./tier-list.html">장르별 티어표</a><a href="./about.html" aria-current="page">소개 &amp; FAQ</a></nav>
+        <small>© 2026 GAME COUNTER · 데이터 표기 기준 2026.10</small>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+  </body>
+</html>

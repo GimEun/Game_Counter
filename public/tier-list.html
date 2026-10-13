@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="로그라이크부터 RPG와 전략까지 5개 장르의 추천 게임 20종을 S, A, B 티어로 비교합니다.">
+    <meta name="theme-color" content="#081018">
+    <title>장르별 티어표 — GAME COUNTER</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./tier-list.css">
+    <script src="./app.js" defer></script>
+    <script src="./data/games.js" defer></script>
+    <script src="./tier-list.js" defer></script>
+  </head>
+  <body class="tier-page">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+
+    <header class="site-header scrolled" data-header data-solid-header>
+      <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="GAME COUNTER 홈">
+          <span class="brand-mark" aria-hidden="true">G</span>
+          <span>GAME <strong>COUNTER</strong></span>
+        </a>
+
+        <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-button>
+          <span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="주요 메뉴" data-nav>
+          <a href="./index.html">홈</a>
+          <a href="./index.html#genres">장르</a>
+          <a class="active" href="./tier-list.html" aria-current="page">티어표</a>
+          <a href="./criteria-and-detail.html">선정 기준 &amp; 리뷰</a>
+          <a href="./about.html">사이트 소개</a>
+        </nav>
+
+        <a class="header-cta" href="#tier-board">티어 보기</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="tier-hero" aria-labelledby="tier-title">
+        <div class="tier-hero-art" aria-hidden="true">
+          <span style="--tier-image: url('./assets/Game_Image/하데스.webp')"></span>
+          <span style="--tier-image: url('./assets/Game_Image/할로우 나이트.webp')"></span>
+          <span style="--tier-image: url('./assets/Game_Image/엘든링.webp')"></span>
+          <span style="--tier-image: url('./assets/Game_Image/디스코 엘리시움.webp')"></span>
+          <span style="--tier-image: url('./assets/Game_Image/발더스 게이트3.webp')"></span>
+        </div>
+        <div class="shell tier-hero-content">
+          <p class="eyebrow"><span></span> CURATED TIER LIST</p>
+          <h1 id="tier-title">취향을 찾는<br><em>20개의 기준점</em></h1>
+          <p>평점만으로 줄 세우지 않았습니다. 수상 기록과 완성도,<br>그리고 지금 플레이해도 선명한 경험을 함께 살폈습니다.</p>
+          <dl class="tier-summary" aria-label="티어표 구성">
+            <div><dt>05</dt><dd>장르</dd></div>
+            <div><dt>20</dt><dd>추천작</dd></div>
+            <div><dt>S·A·B</dt><dd>큐레이션 티어</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="criteria-strip" aria-labelledby="criteria-title">
+        <div class="shell">
+          <div class="criteria-heading">
+            <p class="section-index">RANKING STANDARD</p>
+            <h2 id="criteria-title">티어 산정 기준</h2>
+            <p>정량 지표를 출발점으로 삼고, 장르 안에서의 영향력과 플레이 경험을 종합해 최종 티어를 정했습니다.</p>
+          </div>
+          <div class="criteria-grid">
+            <article class="criterion criterion-s">
+              <span class="criterion-tier">S</span>
+              <div><strong>시대를 대표하는 대명작</strong><p>글로벌 주요 시상식 GOTY 대상 수상 또는 대표 메타크리틱 90점 이상</p></div>
+            </article>
+            <article class="criterion criterion-a">
+              <span class="criterion-tier">A</span>
+              <div><strong>놓치기 아까운 필수 플레이</strong><p>주요 시상식 부문상 수상 또는 대표 메타크리틱 85점 이상</p></div>
+            </article>
+            <article class="criterion criterion-b">
+              <span class="criterion-tier">B</span>
+              <div><strong>취향이 맞으면 강하게 남는 수작</strong><p>국내외 수상 기록과 스팀 ‘매우 긍정적’ 이상의 이용자 평가</p></div>
+            </article>
+          </div>
+          <p class="criteria-note">※ 점수는 플랫폼별 차이가 있는 대표값이며, 티어는 숫자만으로 자동 산정하지 않은 편집부 종합 평가입니다.</p>
+        </div>
+      </section>
+
+      <section class="tier-board section shell" id="tier-board" aria-labelledby="board-title">
+        <div class="board-heading">
+          <div>
+            <p class="section-index">EXPLORE BY GENRE</p>
+            <h2 id="board-title">장르별 티어</h2>
+          </div>
+          <p>모든 가격은 사용자가 제공한 기준가이며 판매처와 할인 여부에 따라 달라질 수 있습니다.</p>
+        </div>
+
+        <div class="genre-filter" role="group" aria-label="장르 필터" data-genre-filter>
+          <button class="active" type="button" data-genre="all" aria-pressed="true">전체</button>
+          <button type="button" data-genre="roguelike" aria-pressed="false">로그라이크</button>
+          <button type="button" data-genre="metroidvania" aria-pressed="false">메트로배니아</button>
+          <button type="button" data-genre="soulslike" aria-pressed="false">소울라이크</button>
+          <button type="button" data-genre="narrative" aria-pressed="false">내러티브</button>
+          <button type="button" data-genre="rpg-strategy" aria-pressed="false">RPG &amp; 전략</button>
+        </div>
+
+        <p class="filter-status" aria-live="polite" data-filter-status>전체 20개 게임을 표시합니다.</p>
+        <div class="genre-sections" data-tier-sections></div>
+        <noscript><p class="noscript-message">게임 목록을 보려면 JavaScript를 활성화해 주세요.</p></noscript>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <a class="brand" href="./index.html" aria-label="GAME COUNTER 홈"><span class="brand-mark" aria-hidden="true">G</span><span>GAME <strong>COUNTER</strong></span></a>
+          <p>취향을 선명하게, 다음 게임을 가깝게.</p>
+          <address class="footer-contact"><span>대표: 김이언</span><span>대표 전화번호: <a href="tel:010-1234-4321">010-1234-4321</a></span></address>
+        </div>
+        <nav aria-label="하단 메뉴">
+          <a href="./criteria-and-detail.html">선정 기준</a>
+          <a href="./tier-list.html" aria-current="page">장르별 티어표</a>
+          <a href="./about.html">소개 &amp; FAQ</a>
+        </nav>
+        <small>© 2026 GAME COUNTER · 데이터 표기 기준 2026.10</small>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast>이 페이지는 다음 단계에서 준비됩니다.</div>
+  </body>
+</html>

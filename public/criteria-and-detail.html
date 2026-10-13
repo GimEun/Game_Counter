@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GAME COUNTER의 추천 기준을 확인하고 5개 장르 20개 게임의 장단점, 상세 리뷰와 공식 영상을 살펴보세요.">
+    <meta name="theme-color" content="#071018">
+    <title>선정 기준 &amp; 상세 리뷰 — GAME COUNTER</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./criteria-and-detail.css">
+    <script src="./app.js" defer></script>
+    <script src="./data/games.js" defer></script>
+    <script src="./criteria-and-detail.js" defer></script>
+  </head>
+  <body class="detail-page">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+
+    <header class="site-header scrolled" data-header data-solid-header>
+      <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="GAME COUNTER 홈">
+          <span class="brand-mark" aria-hidden="true">G</span>
+          <span>GAME <strong>COUNTER</strong></span>
+        </a>
+        <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-button><span></span><span></span></button>
+        <nav class="main-nav" aria-label="주요 메뉴" data-nav>
+          <a href="./index.html">홈</a>
+          <a href="./index.html#genres">장르</a>
+          <a href="./tier-list.html">티어표</a>
+          <a class="active" href="./criteria-and-detail.html" aria-current="page">선정 기준 &amp; 리뷰</a>
+          <a href="./about.html">사이트 소개</a>
+        </nav>
+        <a class="header-cta" href="#game-explorer">게임 찾기</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="detail-hero" aria-labelledby="detail-title">
+        <div class="detail-hero-art" aria-hidden="true">
+          <span style="--detail-image: url('./assets/Game_Image/셀레스티.webp')"></span>
+          <span style="--detail-image: url('./assets/Game_Image/세키로.webp')"></span>
+          <span style="--detail-image: url('./assets/Game_Image/산나비.webp')"></span>
+          <span style="--detail-image: url('./assets/Game_Image/문명6.webp')"></span>
+        </div>
+        <div class="shell detail-hero-content">
+          <p class="eyebrow"><span></span> BEYOND THE SCORE</p>
+          <h1 id="detail-title">숫자 너머의<br><em>플레이 경험</em></h1>
+          <p>좋은 평점에서 멈추지 않고, 무엇이 특별한지와<br>누구에게 잘 맞는지까지 분명하게 전합니다.</p>
+          <a class="button button-primary" href="#methodology">선정 방식 살펴보기 <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="methodology section shell" id="methodology" aria-labelledby="method-title">
+        <div class="method-heading">
+          <div><p class="section-index">HOW WE CURATE</p><h2 id="method-title">네 가지 질문으로<br>게임을 읽습니다</h2></div>
+          <p>수상과 평점은 검토의 출발점입니다. 실제 추천에서는 장르 안에서 만든 변화와 지금 플레이할 때의 경험을 함께 봅니다.</p>
+        </div>
+        <ol class="method-grid">
+          <li><span>01</span><strong>완성도</strong><p>조작, 시스템, 미술과 사운드가 하나의 경험으로 단단하게 맞물리는가.</p></li>
+          <li><span>02</span><strong>장르 영향력</strong><p>익숙한 문법을 발전시키거나 이후 작품에 의미 있는 기준을 남겼는가.</p></li>
+          <li><span>03</span><strong>접근성과 깊이</strong><p>처음에는 이해하기 쉽고, 오래 플레이할수록 새로운 선택과 숙련을 제공하는가.</p></li>
+          <li><span>04</span><strong>지속성</strong><p>출시 시기와 관계없이 지금 시작해도 고유한 재미와 가치를 느낄 수 있는가.</p></li>
+        </ol>
+        <div class="tier-rule" aria-label="티어별 기준">
+          <div data-tier="S"><b>S</b><span><strong>MASTERPIECE</strong> GOTY 대상 또는 대표 메타크리틱 90점 이상</span></div>
+          <div data-tier="A"><b>A</b><span><strong>ESSENTIAL</strong> 주요 부문상 또는 대표 메타크리틱 85점 이상</span></div>
+          <div data-tier="B"><b>B</b><span><strong>RECOMMENDED</strong> 국내외 수상과 높은 이용자 평가를 받은 수작</span></div>
+        </div>
+        <p class="method-note">※ 플랫폼별 점수 차이와 취향 요소를 고려해 정량 지표만으로 티어를 자동 산정하지 않습니다.</p>
+      </section>
+
+      <section class="review-section" id="game-explorer" aria-labelledby="review-title">
+        <div class="shell">
+          <div class="review-heading">
+            <div><p class="section-index">20 CURATED REVIEWS</p><h2 id="review-title">게임 상세 리뷰</h2></div>
+            <p>게임을 골라 장점과 유의점, 플레이 정보와 공식 영상을 한곳에서 확인하세요.</p>
+          </div>
+
+          <label class="game-select-label" for="game-select">게임 선택</label>
+          <select id="game-select" class="game-select" data-game-select></select>
+
+          <div class="review-layout">
+            <aside class="game-navigation" aria-label="리뷰할 게임 선택" data-game-navigation></aside>
+            <article class="review-panel" aria-live="polite" data-review-panel></article>
+          </div>
+          <noscript><p class="noscript-message">상세 리뷰를 보려면 JavaScript를 활성화해 주세요.</p></noscript>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div><a class="brand" href="./index.html" aria-label="GAME COUNTER 홈"><span class="brand-mark" aria-hidden="true">G</span><span>GAME <strong>COUNTER</strong></span></a><p>취향을 선명하게, 다음 게임을 가깝게.</p><address class="footer-contact"><span>대표: 김이언</span><span>대표 전화번호: <a href="tel:010-1234-4321">010-1234-4321</a></span></address></div>
+        <nav aria-label="하단 메뉴"><a href="./criteria-and-detail.html" aria-current="page">선정 기준</a><a href="./tier-list.html">장르별 티어표</a><a href="./about.html">소개 &amp; FAQ</a></nav>
+        <small>© 2026 GAME COUNTER · 데이터 표기 기준 2026.10</small>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast>이 페이지는 다음 단계에서 준비됩니다.</div>
+  </body>
+</html>
